@@ -1,0 +1,10 @@
+{
+  "success": false,
+  "error": {
+    "code": "LLM_UNAVAILABLE",
+    "message": "Query understanding is temporarily unavailable.",
+    "details": {
+      "last_error": "LLMNotConfigured(\"Model ID for provider 'gemini' is not set\")"
+    }
+  }
+}

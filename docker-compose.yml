@@ -1,0 +1,16 @@
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: ai-prospect-discovery:latest
+    container_name: ai-prospect-discovery
+    env_file:
+      - .env
+    environment:
+      PORT: "4000"
+    ports:
+      - "4000:4000"
+    volumes:
+      - ./samples:/app/samples        # scripts/run_test_queries.py writes results here
+    restart: unless-stopped
